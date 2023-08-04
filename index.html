@@ -22,6 +22,42 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 <link rel="stylesheet" href="assets/css/color.css">
+
+    <style>
+        .image-container {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1), 0 5px 0 rgba(0, 0, 0, 0.1), 0 8px 0 rgba(0, 0, 0, 0.1), 0 10px 0 rgba(0, 0, 0, 0.1), 0 13px 0 rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+}
+
+.image-container::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  transition: top 0.2s;
+}
+
+.image-container:hover::before {
+  top: 0;
+}
+
+    </style>
+
+
 </head>
 <body>
 <div id="dtr-wrapper" class="clearfix">
@@ -156,6 +192,72 @@
         </section>
         <!-- logo carousel section ends
 ================================================== -->
+
+        <!-- Unlock Your Growth section starts
+================================================== -->
+<section class="dtr-section dtr-pt-50 py-5 my-5" style="background-color: #F4F4F6;">
+    <div class="container growth-container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-8 ">
+                <div class="growth-inner-left">
+                    <h3>Unlock Your Growth with <span style="color: #B71737;">ShootOrder</span></h3>
+                    <div style="margin-bottom: 30px;">
+                        <h5>Your Growth Partner</h5>
+                        <p>
+                            With an industry-leading experience of more than <span style="font-weight: 700;">13 years</span> and a dedicated team of over <span style="font-weight: 700;">200 growth experts</span> , we have been the trusted partner to numerous reputed brands across industries.
+                        </p>
+                    </div>
+                    <div class="growth-inner-icon">
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="image-container">
+                                <img src="https://www.amuratech.com/assets/india-campaign/growth-amura-icon1-cb84cb4a2f5b0721b16761d2a391a2d9.svg" alt="Amura Image">
+                              </div>
+                            <div>
+                                <div class="mx-2">
+                                    <h5 style="margin-bottom: 0;">Growth Marketing Framework</h5>
+                                    <span>
+                                        Proprietary full-funnel marketing & analytics framework to ensure longer-term growth
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="image-container">
+                                <img src="https://www.amuratech.com/assets/india-campaign/growth-amura-icon1-cb84cb4a2f5b0721b16761d2a391a2d9.svg" alt="Amura Image">
+                              </div>
+                            <div>
+                                <div class="mx-2">
+                                    <h5 style="margin-bottom: 0;">Timely Delivery</h5>
+                                    <span>
+                                        Quicker turn-around time & outputs delivered within deadlines facilitated by our in-house project
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="image-container">
+                                <img src="https://www.amuratech.com/assets/india-campaign/growth-amura-icon1-cb84cb4a2f5b0721b16761d2a391a2d9.svg" alt="Amura Image">
+                              </div>
+                            <div>
+                                <div class="mx-2">
+                                    <h5 style="margin-bottom: 0;">Quality Assurance</h5>
+                                    <span>
+                                        Industry level quality standards for every requirement to deliver on our promise of trust & reliability
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-4">SVG Image Container</div>
+        </div>
+    </div>
+</section>
+<!-- Unlock Your Growth section ends
+================================================== -->
+
+
 
         <!-- about section starts
 ================================================== -->
